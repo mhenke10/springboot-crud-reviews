@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "rating": 1,
+    "ratingDescription": "Digusting"
+  },
+  {
+    "id": 2,
+    "rating": 2,
+    "ratingDescription": "Slightly Edible"
+  },
+  {
+    "id": 3,
+    "rating": 3,
+    "ratingDescription": "Average"
+  },
+  {
+    "id": 4,
+    "rating": 4,
+    "ratingDescription": "Great"
+  },
+  {
+    "id": 5,
+    "rating": 5,
+    "ratingDescription": "Fantastic"
+  }
+]
+

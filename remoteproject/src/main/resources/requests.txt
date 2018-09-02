@@ -1,0 +1,16 @@
+Posts used for reviews:
+curl -XPOST "http://localhost:8080/restaurant/1/reviews?userId=10&ratingValue=5" -H 'Content-Type: application/json' -d '{"review": "Best burritos ever!!!","reviewDate": "09-01-2018 12:30:11"}'
+curl -XPOST "http://localhost:8080/restaurant/1/reviews?userId=9&ratingValue=3" -H 'Content-Type: application/json' -d '{"review": "They tore my Burrito but rolled it up anyway","reviewDate": "09-04-2018 11:15:16"}'
+
+Get reviews for restaurant (these are sorted by date):
+curl -XGET "http://localhost:8080/restaurant/1/reviews" -H 'Content-Type: application/json'
+
+Get food by type (had trouble with averages portion):
+curl -XGET "http://localhost:8080/restaurant?type=Tacos" -H 'Content-Type: application/json'
+curl -XGET "http://localhost:8080/restaurant?type=Burgers" -H 'Content-Type: application/json'
+
+Try posting as Darth Vader:
+curl -XPOST "http://localhost:8080/restaurant/1/reviews?userId=11&ratingValue=1" -H 'Content-Type: application/json' -d '{"review": "FULL of Jedi. Avoid if possible","reviewDate": "09-04-2018 11:15:16"}'
+
+Try posting as daRth VadEr
+curl -XPOST "http://localhost:8080/restaurant/1/reviews?userId=12&ratingValue=1" -H 'Content-Type: application/json' -d '{"review": "FULL of Jedi. Avoid if possible","reviewDate": "09-04-2018 11:15:16"}'
